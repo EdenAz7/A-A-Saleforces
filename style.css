@@ -11,13 +11,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
-  min-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  .bgImg {
+    min-height: 300px; /* Adjust as needed for smaller screens */
+  }
 }
 
 .mainText {
   padding: auto;
-  width: 800px;
+  width: 80%; /* Adjust the width as needed */
   font-family: 'Lexend Deca', sans-serif;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .mainText {
+    width: 100%;
+  }
 }
 
 
