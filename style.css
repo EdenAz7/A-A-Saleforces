@@ -1,0 +1,23 @@
+.bgImg {
+    background-image: url("img/bg.jpg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1,h3{
+    text-align: center;
+    padding: 15px;
+  }
+  h4{
+    text-align: center;
+  }
+ .mainText{
+    margin: auto;
+  width: 800px; 
+  padding: 50px;
+  font-family: 'Lexend Deca', sans-serif; 
+ }
+  
