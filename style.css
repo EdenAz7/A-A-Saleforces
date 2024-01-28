@@ -30,3 +30,8 @@
 .call:hover{
   color:  #ffc425;
 }
+
+.credit{
+  font-size: 8px;
+  color: gray;
+}
