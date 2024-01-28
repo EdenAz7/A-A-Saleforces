@@ -4,28 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <title>A&A Saleforces</title>
 </head>
 
-<body class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top mb-5">
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-primary fixed-top mb-5">
     <div class="container-fluid">
-      <a href="#Top"><img src="img/Logo.jpg" alt="" width="70px" style="border-radius: 100px;"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <a href="index.html" class="navbar-brand home">
+        <img src="img/Logo.jpg" alt="Logo" class="logo">
+      </a>
+
+      <div class="navbar navbar-dark bg-muted">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div id="navbarnav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html" class="nav-link home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">À propos</a>
@@ -47,25 +51,26 @@
     </div>
   </nav>
 
-  <div class="bgImg">Image by <a
-      href="https://www.freepik.com/free-photo/people-working-call-center_22896178.htm#query=call%20center&position=3&from_view=search&track=ais&uuid=d51450d9-d277-4f8b-8c1e-e409b3359cf7">Freepik</a>
+  <div class="bgImg"></div>
+
+  <div class="archor mainText p-3 mt-2 container-fluid" id="about">
+    <h1 class="text-center text-primary font-weight-bold display-3 mb-4 header">A&A Saleforces</h1>
+    <h3 class="text-center text-primary font-weight-bold mb-4">Presentation de notre societe</h3>
+    <div class="mainText">
+      <p>
+        Fondée le 4 juillet 2019, notre société représente l'excellence dans le domaine des déménagements en France. Forte
+        d'une équipe de 11 collaborateurs hautement qualifiés, notre mission est de fournir des services de déménagement
+        exceptionnels à travers l'ensemble du territoire français.</p>
+      <p> Notre approche repose sur la mise en place d'un système intégral, méticuleusement conçu, où chaque collaborateur
+        joue un rôle spécifique, contribuant ainsi à l'efficacité et à la réussite de chaque prestation. Chaque membre de
+        notre équipe partage une passion commune pour l'excellence opérationnelle et s'engage à offrir des solutions de
+        déménagement sur mesure, répondant aux besoins uniques de nos clients.
+      </p>
+    </div>
   </div>
-  <div class="mainText p-3" id="about">
-    <h1 id="Top">A&A Saleforces</h1>
-    <h3>PRESENTATION DE NOTRE SOCIETE</h3>
-    <p>
-      Fondée le 4 juillet 2019, notre société représente l'excellence dans le domaine des déménagements en France. Forte
-      d'une équipe de 11 collaborateurs hautement qualifiés, notre mission est de fournir des services de déménagement
-      exceptionnels à travers l'ensemble du territoire français.</p>
-    <p> Notre approche repose sur la mise en place d'un système intégral, méticuleusement conçu, où chaque collaborateur
-      joue un rôle spécifique, contribuant ainsi à l'efficacité et à la réussite de chaque prestation. Chaque membre de
-      notre équipe partage une passion commune pour l'excellence opérationnelle et s'engage à offrir des solutions de
-      déménagement sur mesure, répondant aux besoins uniques de nos clients.
-    </p>
-  </div>
-  <div id="team" class="mainText p-3">
-    <br><br><br>
-    <h3>POLE MARKETING</h3>
+  <div id="team" class="mainText p-3 archor">
+
+    <h3 class="text-center text-primary font-weight-bold mb-4">Pole marketing</h3>
     <p>Thibault et Yann, experts en Google Ads, génèrent quotidiennement plus de 200 demandes de devis pour des
       déménagements. Ces demandes sont traitées par une équipe de neuf téléprospecteurs, tous spécialisés dans la vente
       en ligne de devis.</p>
@@ -84,30 +89,30 @@
 
   </div>
 
-  <div id="history" class="mainText p-3">
-    <br><br><br>
-    <h3>Historique de l'entreprise</h3>
-    <h4>2019</h4>
+  <div id="history" class="mainText p-3 archor">
+
+    <h3 class="text-center text-primary font-weight-bold mb-4">Historique de l'entreprise</h3>
+    <h4 class="text-primary font-weight-bold mb-4">2019</h4>
     <p>
       Notre parcours a commencé avec une équipe restreinte de quatre collaborateurs, et dès cette première année, nous
       avons généré un chiffre d'affaires annuel de 1 044 000 euros hors taxes.
     </p>
-    <h4>2020</h4>
+    <h4 class="text-primary font-weight-bold mb-4">2020</h4>
     <p>
       Fort de notre croissance, 3 nouvelles recrues ont rejoint notre équipe, marquant une étape cruciale dans notre
       développement. Nous avons significativement amélioré la qualité des leads et augmenté leur quantité. Le chiffre
       d'affaires pour l'année 2020 a atteint 2 268 000 euros hors taxes.
     </p>
-    <h4>2021-23</h4>
+    <h4 class="text-primary font-weight-bold mb-4">2021-23</h4>
     <p>
       Notre entreprise a depuis atteint sa vitesse de croisière, avec plus de 1300 chantiers vendus et réalisés chaque
       année. Cette performance exceptionnelle se traduit par un chiffre d'affaires annuel dépassant les 3 millions
       d'euros. Nous sommes fiers de notre trajectoire ascendante et de la confiance croissante de notre clientèle.
     </p>
   </div>
-  <div class="mainText p-3" id="objectif">
-    <br><br><br>
-    <h4>OBJECTIFS STRATÉGIQUES POUR 2024
+  <div class="mainText p-3 archor" id="objectif">
+
+    <h4 class="text-center text-primary font-weight-bold mb-4">Objectifs strategiques pour 2024
     </h4>
     <ul>
       <li><b>Partenariat avec des Sociétés de Déménagement</b><br>
@@ -136,27 +141,29 @@
       </li>
     </ul>
   </div>
-  <footer id="contact" class="mainText p-3">
-    <br><br><br>
-    <h4>Contactez-nous</h4>
-
-    <p>Pour toute demande d'information ou collaboration, n'hésitez pas à nous contacter. Notre équipe dévouée est là
-      pour répondre à vos questions et vous fournir l'assistance dont vous avez besoin.</p>
-
-    <h5>Coordonnées de Contact:</h5>
-
-    <p>
-      A&A Saleforces <br>
-
-      Téléphone : +972-54-495-0801 <br>
-
-      Email : arielazoulay4@gmail.com
-    </p>
-
-    <p>Nous sommes impatients de vous entendre et de discuter de la manière dont A&A Saleforces peut répondre à vos
-      besoins. Merci de votre intérêt pour notre entreprise.</p>
-
+  <footer id="contact" class="p-3 bg-primary container-fluid mt-2 container-fluid mt-2 archor">
+    <h4 class="text-center text-light font-weight-bold mb-4 display-4">Contactez-nous</h4>
+<div class="mainText ">
+  
+      <p>Pour toute demande d'information ou collaboration, n'hésitez pas à nous contacter. Notre équipe dévouée est là
+        pour répondre à vos questions et vous fournir l'assistance dont vous avez besoin.</p>
+  
+      <h5>Coordonnées de Contact:</h5>
+  
+      <p>
+        A&A Saleforces <br>
+  
+        Téléphone : <a href="tel:+972-54-495-0801" class="call">054-495-0801</a> <br>
+  
+        Email : <a href="mailto:arielazoulay4@gmail.com" class="call">arielazoulay4@gmail.com</a>
+      </p>
+  
+      <p>Nous sommes impatients de vous entendre et de discuter de la manière dont A&A Saleforces peut répondre à vos
+        besoins. Merci de votre intérêt pour notre entreprise.</p>
+  
+</div>
   </footer>
+  <div class="bgImg"></div>
 </body>
 
 </html>
