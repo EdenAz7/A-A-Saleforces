@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/Logo.png" type="image/x-icon" style="border-radius: 100%;">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
@@ -21,14 +20,16 @@
 
 <body >
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top mb-5">
+  <nav class= "navbar navbar-expand-md navbar-light bg-primary">
     <div class="container-fluid">
       <a href="#Top"><img src="img/Logo.png" alt="" width="70px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar navbar-dark bg-muted">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav"
+          aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div id="navbarnav" class="collapse navbar-collapse">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -57,7 +58,7 @@
   <p class="credit">Image by <a
       href="https://www.freepik.com/free-photo/people-working-call-center_22896178.htm#query=call%20center&position=4&from_view=search&track=ais&uuid=d8c8f2ae-0268-4099-9bde-3836d69521b7">Freepik</a>
   </p>
-  <div class="archor mainText p-3 m-auto container-fluid" id="about">
+  <div class="archor  p-3 m-auto container-fluid" id="about">
     <h1 class=" text-center text-primary font-weight-bold display-3 mb-4 header">A&A Saleforces</h1>
     <h3 class=" text-center text-primary font-weight-bold mb-4">Presentation de notre societe</h3>
     <p>
@@ -146,7 +147,7 @@
 
   <div id="contact" class=" mainText p-3 bg-primary  mt-2 container-fluid mt-2 archor">
     <br>
-    <h4 class="text-center text-light font-weight-bold mb-4 display-4">Contactez-nous</h4>
+    <h4 class="text-center text-light font-weight-bold mb-4 display-4 header">Contactez-nous</h4>
 
     <p>Pour toute demande d'information ou collaboration, n'hésitez pas à nous contacter. Notre équipe dévouée est là
       pour répondre à vos questions et vous fournir l'assistance dont vous avez besoin.</p>
@@ -171,8 +172,8 @@
   <div class="bgImg"></div>
 </body>
 
-<script>
+<!-- <script>
   document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+</script> -->
 
 </html>

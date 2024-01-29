@@ -30,6 +30,9 @@
   .mainText {
     width: 100%;
   }
+  .header{
+    font-size: 50px;
+  }
 }
 
 
